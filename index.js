@@ -7,7 +7,20 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
 
 ];
-
+inquirer
+    .prompt([
+        {
+            type: "input",
+            name: "title",
+            message: "Please enter the title of your README:"
+        }
+    ])
+    .then((answers) => {
+        console.log(answers);
+    })
+    .catch((error) => {
+        console.log("An error occurred: ");
+    })
 // function to write README file
 function writeToFile(fileName, data) {
 }

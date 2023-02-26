@@ -14,6 +14,9 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        err ? console.error(err) : console.log("Success!");
+    })
 }
 
 // function to initialize program
@@ -21,7 +24,7 @@ function init() {
     inquirer
     .prompt(questions)
     .then((answers) => {
-        console.log(answers);
+        writeToFile("README.md", generateMarkdown(answers))
     })
     .catch((error) => {
         console.log("An error occurred: ");

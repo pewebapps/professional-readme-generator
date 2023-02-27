@@ -44,6 +44,7 @@ function generateMarkdown(data) {
 
   [GitHub Profile](${githubUsernameURL})
 
+  If you have any additional questions then please direct them via this email address: <${data.email}>
 `;
 }
 

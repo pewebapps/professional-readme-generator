@@ -4,7 +4,7 @@
 
   ## Description
 
-  This is an application that will help you autogenerate a professional README file for your respository.
+  This is an application that will help you autogenerate a professional README file for your respository. You will need to answer a few questions in order to generate the README.
 
   ![license](https://img.shields.io/static/v1?label=license&message=MIT%20License&color=green)
 
@@ -19,11 +19,11 @@
 
   ## Installation
 
-  You need to clone the repo and then run install node.
+  You need to clone the repo and then run `npm install`. This is required in order to install a third party package that we use called `inquirer`.
 
   ## Usage
 
-  To use the app you run the command node index.js - you will then have to answer several questions in order to fill out the README with your specific data
+  To use the app you run the command `node index.js` - you will then have to answer several questions in order to fill out the README with your specific data.
 
   ## License
 

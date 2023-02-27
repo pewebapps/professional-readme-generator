@@ -14,6 +14,26 @@ const questions = [
         type: "input",
         name: "description",
         message: "README description?"
+    },
+    {
+        type: "input",
+        name: "installation",
+        message: "Installations instructions?"
+    },
+    {
+        type: "input",
+        name: "usage",
+        message: "How do you use the app?"
+    },
+    {
+        type: "input",
+        name: "contributing",
+        message: "How can other developers contribute?"
+    },
+    {
+        type: "input",
+        name: "tests",
+        message: "What tests are there and how should they be run?"
     }
 ];
 

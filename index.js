@@ -26,6 +26,17 @@ const questions = [
         message: "How do you use the app?"
     },
     {
+        type: "list",
+        name: "license",
+        message: "What license would you like to have for your repository?",
+        choices: [
+            "MIT License",
+            "GNU General Public License v3.0",
+            "Apache",
+            "Private repo"
+        ]
+    },
+    {
         type: "input",
         name: "contributing",
         message: "How can other developers contribute?"

@@ -8,7 +8,12 @@ const questions = [
     {
         type: "input",
         name: "title",
-        message: "Please enter the title of your README:"
+        message: "This is a Professional README generator. You will be asked to enter several pieces of information.\nPlease enter the title of your README to get started: "
+    },
+    {
+        type: "input",
+        name: "description",
+        message: "README description?"
     }
 ];
 

@@ -10,6 +10,8 @@ function generateMarkdown(data) {
     badge = `https://img.shields.io/static/v1?label=license&message=${escape(data.license)}&color=red`
   }
 
+  let githubUsernameURL = `https://github.com/${data.username}`
+
   return `
   # ${data.title}
   ## Description
@@ -37,6 +39,10 @@ function generateMarkdown(data) {
   ## Tests
 
   ${data.tests}
+
+  ## Questions
+
+  [GitHub Profile](${githubUsernameURL})
 
 `;
 }
